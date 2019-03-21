@@ -47,19 +47,19 @@ class Database(Database):
         d['countries'] = service.db.exp_list_countries()
         d['pattern'] = DBNAME_PATTERN
         d['system_name'] = tools.config.get(
-            "database_manager_system_name", "Odoo"
+            "database_manager_system_name", "SkyERP"
         )
         d['system_logo'] = tools.config.get(
             "database_manager_system_logo_url",
-            "/web/static/src/img/logo2.png"
+            "/muk_saas_branding/static/src/img/logo2.png"
         )
         d['system_favicon'] = tools.config.get(
             "database_manager_system_favicon_url",
-            "/web/static/src/img/favicon.ico"
+            "/muk_saas_branding/static/src/img/favicon.ico"
         )
         d['privacy_policy'] = tools.config.get(
             "database_manager_privacy_policy_url",
-            "https://www.odoo.com/privacy"
+            "https://skyerp.net/page/quyen-rieng-tu"
         )
         d['databases'] = []
         try:
